@@ -1,0 +1,225 @@
+.block-header {
+  color: $text_wrapper;
+  background: #161d21 url("/img/bg_header.jpg") center top no-repeat;
+  padding-bottom: 200px;
+}
+
+.header {
+  //  Верхний блок в шапке
+  &__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 145px;
+  }
+
+  //  Обёртка текста в шапке
+  &__inner {
+    width: 945px;
+    margin: 0 auto;
+  }
+}
+
+//  Логотип
+.logo {
+  &__link {
+    display: inline-block;
+    font-family: 'Walkway-black', Arial, sans-serif;
+    font-size: 35px;
+    line-height: 30px;
+    text-decoration: none;
+    color: $text_wrapper;
+  }
+
+  &__text-X {
+    color: $highlighted;
+  }
+}
+
+//  Иконки соц.сетей
+.social {
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+  }
+
+  &__item {
+    display: inline;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  //  Модификатор _circle, иконка в круге
+  &__link_circle {
+    display: inline-block;
+    position: relative;
+    background-color: #ffffff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    //  Изменение цвета иконок при наведении
+    &:hover {
+      background-color: $highlighted;
+
+      .icon-facebook,
+      .icon-twitter,
+      .icon-linkedin {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+//  шрифтовые иконки соц.сетей
+.icon-facebook,
+.icon-twitter,
+.icon-linkedin {
+  color: #000000;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+//  Текст в шапке
+.solution {
+  //  Заголовок
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  //  Слово 'Solution'
+  &__text-highlighted {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: $highlighted;
+  }
+
+  //  Параграф
+  &__description {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+}
+
+//  Форма регистрации
+.form {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 23px;
+
+  &__input {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $text_wrapper;
+    background-color: #000000;
+    padding: 11px 20px;
+    border: 1.0px solid rgba(1, 153, 230, 0.3);
+    margin-right: 18px;
+    border-radius: 3px;
+    -webkit-box-shadow: -3px 0px 0px 0px $highlighted;
+    box-shadow: -3px 0px 0px 0px $highlighted;
+    -webkit-transition: border-color 0.15s;
+    transition: border-color 0.15s;
+
+    &:hover {
+      border: 1px solid $highlighted;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid $highlighted;
+    }
+  }
+}
+
+//  Кнопка
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 3px;
+  background-color: #008ed6;
+
+  //  Модификатор стилей кнопки регистрации
+  &_sign-up {
+    position: relative;
+    font-family: "Raleway", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 15px;
+    color: $text_wrapper;
+    text-align: center;
+    width: 180px;
+
+    //  Изменение цвета кнопки регистрации, при наведении
+    &:hover {
+      background-color: $highlighted;
+      -webkit-transition: 0.15s;
+      transition: 0.15s;
+    }
+  }
+
+  &_none-prompt::after {
+    content: 'Register Now and Get FREE Trial';
+    position: absolute;
+    visibility: hidden;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    left: -117%;
+    top: 160%;
+    width: 235px;
+    padding-top: 14px;
+    padding-right: 35px;
+    opacity: 0;
+    text-transform: none;
+    text-align: center;
+    background: url("/img/arrow_with_prompt.png") right 1px no-repeat;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+  }
+
+  &_none-prompt:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+
+

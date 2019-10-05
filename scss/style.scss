@@ -1,0 +1,14 @@
+//Переменные цвета
+@import "helpers/variables";
+//Сброс стилей
+@import "base/normalize";
+// Базовые настройки сетки
+@import "base/grid";
+// Шрифты
+@import "base/typography";
+// Header сайта
+@import "layout/header";
+// Content сайта
+@import "layout/content";
+// Footer сайта
+@import "layout/footer";
