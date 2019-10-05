@@ -1,10 +1,7 @@
-//// Fonts ////
 
-Arial, bold - 12px, regular - 40px
-MyriadPro, bold - 18px, regular - 18px
-Raleway Medium - medium, 45px
-Raleway SemiBold - regular, 20px, 24px
-Raleway - bold 14, 16, 18, 20, 25, 35, 45px, medium 35px
-Source Sans Pro - bold 16px, regular 16px
-SourceSansPro - bold 16px, regular 13, 16, 17, 20, 100px
-WalkwayBlack  - bold 35px, regular 35px
+порядок команд добавления в репозиторий GIT
+git add .           / добавить все файлы и папки
+git add file_name   / добавить один файл  file_name - имя добавляемого файла
+git status          / проверка статуса для загрузки
+git commit -m"комментарий файла"
+git push origin master    /  загрузка файлов
