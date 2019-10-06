@@ -601,7 +601,7 @@ input[type="submit"] {
   background-color: #0199e6;
 }
 
-.explore__descr {
+.explore__text {
   font-family: 'Source Sans Pro', Arial, sans-serif;
   font-size: 16px;
   line-height: 25px;
@@ -611,12 +611,12 @@ input[type="submit"] {
   margin-bottom: 45px;
 }
 
-.content-explore__list {
+.explore__list {
   list-style: none;
   padding-left: 50px;
 }
 
-.content-explore__title {
+.explore__item-title {
   font-family: 'Raleway', Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -624,7 +624,7 @@ input[type="submit"] {
   margin: 0 0 13px;
 }
 
-.content-explore__descr {
+.explore__item-text {
   font-family: 'Source Sans Pro', Arial, sans-serif;
   font-size: 16px;
   line-height: 25px;
@@ -651,10 +651,6 @@ input[type="submit"] {
   justify-content: space-between;
 }
 
-.about__img {
-  padding-left: 53px;
-}
-
 .about__title {
   font-family: 'Raleway', Arial, sans-serif;
   font-size: 35px;
@@ -676,7 +672,7 @@ input[type="submit"] {
   background-color: #0199e6;
 }
 
-.about__descr {
+.about__text {
   font-family: 'Source Sans Pro', Arial, sans-serif;
   font-size: 16px;
   line-height: 25px;
@@ -686,11 +682,11 @@ input[type="submit"] {
   margin-bottom: 45px;
 }
 
-.content-about__list {
+.about__list {
   list-style: none;
 }
 
-.content-about__title {
+.about__item-title {
   font-family: 'Raleway', Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -698,12 +694,16 @@ input[type="submit"] {
   margin: 0 0 13px;
 }
 
-.content-about__descr {
+.about__item-text {
   font-family: 'Source Sans Pro', Arial, sans-serif;
   font-size: 16px;
   line-height: 25px;
   font-weight: 400;
   color: #727272;
   margin: 0 0 45px;
+}
+
+.about__img {
+  padding-left: 53px;
 }
 /*# sourceMappingURL=style.css.map */

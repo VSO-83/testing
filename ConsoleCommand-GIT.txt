@@ -557,3 +557,10 @@ git commit -am "Navigation fixs"   # сделать коммит
 *.css  diff=css
 *.scss diff=css
 ```
+
+порядок команд добавления в репозиторий GIT
+git add .           / добавить все файлы и папки
+git add file_name   / добавить один файл  file_name - имя добавляемого файла
+git status          / проверка статуса для загрузки
+git commit -m"комментарий файла"
+git push origin master    /  загрузка 

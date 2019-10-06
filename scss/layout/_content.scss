@@ -40,7 +40,7 @@
     }
   }
 
-  &__descr {
+  &__text {
     font-family: 'Source Sans Pro', Arial, sans-serif;
     font-size: 16px;
     line-height: 25px;
@@ -49,15 +49,13 @@
     margin-top: 0;
     margin-bottom: 45px;
   }
-}
 
-.content-explore {
   &__list {
     list-style: none;
     padding-left: 50px;
   }
 
-  &__title {
+  &__item-title {
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -65,7 +63,7 @@
     margin: 0 0 13px;
   }
 
-  &__descr {
+  &__item-text {
     font-family: 'Source Sans Pro', Arial, sans-serif;
     font-size: 16px;
     line-height: 25px;
@@ -73,8 +71,8 @@
     color: #727272;
     margin: 0 0 45px;
   }
-
 }
+
 
 .block-about {
   padding-top: 100px;
@@ -92,10 +90,6 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-
-  &__img {
-    padding-left: 53px;
-  }
 
   &__title {
     font-family: 'Raleway', Arial, sans-serif;
@@ -118,7 +112,7 @@
     }
   }
 
-  &__descr {
+  &__text {
     font-family: 'Source Sans Pro', Arial, sans-serif;
     font-size: 16px;
     line-height: 25px;
@@ -127,15 +121,13 @@
     margin-top: 0;
     margin-bottom: 45px;
   }
-}
 
-.content-about {
   &__list {
     list-style: none;
     ;
   }
 
-  &__title {
+  &__item-title {
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -143,13 +135,17 @@
     margin: 0 0 13px;
   }
 
-  &__descr {
+  &__item-text {
     font-family: 'Source Sans Pro', Arial, sans-serif;
     font-size: 16px;
     line-height: 25px;
     font-weight: 400;
     color: #727272;
     margin: 0 0 45px;
+  }
+
+  &__img {
+    padding-left: 53px;
   }
 
 }
