@@ -1,4 +1,5 @@
-.block-explore {
+.wrap-explore,
+.features {
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -74,7 +75,7 @@
 }
 
 
-.block-about {
+.wrap-about {
   padding-top: 100px;
   padding-bottom: 100px;
 
@@ -146,6 +147,90 @@
 
   &__img {
     padding-left: 53px;
+  }
+
+}
+
+.features__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.features__title {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 35px;
+  line-height: 65px;
+  font-weight: 500;
+  color: #323232;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 68px;
+    height: 1px;
+    background-color: #0199e6;
+  }
+}
+
+.features__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #727272;
+}
+
+.block-features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.box-features {
+  width: 32%;
+
+  &__title {
+    font-family: 'Raleway', Arial, sans-serif;
+    line-height: 64px;
+    font-weight: 600;
+    color: #323232;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  &__text {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #727272;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
 }

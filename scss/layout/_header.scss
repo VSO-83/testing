@@ -1,10 +1,11 @@
-.block-header {
+.wrap-header {
   color: $text_wrapper;
   background: #161d21 url("/img/bg_header.jpg") center top no-repeat;
   padding-bottom: 200px;
 }
 
 .header {
+
   //  Верхний блок в шапке
   &__top {
     display: -webkit-box;
@@ -69,6 +70,7 @@
     width: 25px;
     height: 25px;
     border-radius: 50%;
+
     //  Изменение цвета иконок при наведении
     &:hover {
       background-color: $highlighted;
@@ -97,6 +99,7 @@
 
 //  Текст в шапке
 .solution {
+
   //  Заголовок
   &__title {
     margin-top: 0;
@@ -220,6 +223,3 @@ input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
 }
-
-
-
